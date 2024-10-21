@@ -1,0 +1,17 @@
+{
+    "plugins": [],
+    "steps": [
+      null,
+      null,
+      null
+    ],
+    "preferredVersions": {
+      "php": "8.2",
+      "wp": "beta"
+    },
+    "features": {
+      "networking": true
+    },
+    "login": true
+  }
+  
