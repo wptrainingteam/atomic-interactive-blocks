@@ -10,7 +10,7 @@ const { state, actions } = store('wp-dev-blog/example-b', {
             const { targetNamespace } = context;
             const targetStore = store(targetNamespace);
             const { actions: targetActions, state: targetState } = targetStore;
-            targetState.title = 'Hello from example-b';
+            targetState.content = 'Hello from example-b';
         }
     },
     callbacks: {
