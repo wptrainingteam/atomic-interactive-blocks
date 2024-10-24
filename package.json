@@ -1,0 +1,14 @@
+{
+  "name": "atomic-interactive-blocks-tutorial",
+  "version": "1.0.0",
+  "description": "> <span style=\"color:red\">Please remove all blockquote comments such as this before publishing.</span>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seth Rubenstein",
+  "license": "ISC"
+}
