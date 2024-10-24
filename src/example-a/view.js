@@ -5,9 +5,11 @@ import { store, getContext, getElement, getServerState, getServerContext } from 
 
 const { state, actions } = store('wp-dev-blog/example-a', {
     actions: {
-
+        higherAuthorityGetValue: (oldValue) => {
+            return 'prefixed_' + oldValue;
+        }
     },
     callbacks: {
-        
+
     }
 })
