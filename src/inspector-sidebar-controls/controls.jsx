@@ -51,7 +51,7 @@ export default function Controls({
 									})
 								}
 								help={__(
-									'The namespace serves as a unique identifier for this blocks interactivity context, ensuring that interactions are confined within the scope of this block to its parent.',
+									"The namespace serves as a unique identifier for this blocks interactivity context, ensuring that interactions are confined within the scope of this block to it's parent.",
 									'atomic-interactivity-controls'
 								)}
 							/>

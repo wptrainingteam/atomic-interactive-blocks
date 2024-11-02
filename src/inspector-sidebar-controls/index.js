@@ -12,7 +12,7 @@ import { useSelect } from '@wordpress/data';
 import Controls from './controls';
 
 /**
- * Add the interactivity api controls to all blocks that support block.
+ * Add the interactivity api controls to all blocks that support it.
  */
 addFilter(
 	'editor.BlockEdit',
@@ -38,8 +38,8 @@ addFilter(
 					[name]
 				);
 
-        // If our block does not support interactivity, and if it's not currently selected
-        // then we'll return the <BlockEdit/> component unchanged. 
+				// If our block does not support interactivity, and if it's not currently selected
+				// then we'll return the <BlockEdit/> component unchanged. 
 				if (!supportsInteractivity || !isSelected) {
 					return <BlockEdit {...props} />;
 				}
