@@ -67,21 +67,15 @@ addFilter(
 	'blocks.registerBlockType',
 	`atomic-interactivity-api-supports`,
 	(settings) => {
-    // Here we're checking if our block supports interactivity api.
-    // Blocks must opt in to the interactivity api with supports.interactivity = true in their block.json
 		if (settings?.supports?.interactivity) {
-      // For interactive blocks we're going to add 1 attribute with two properties, globally.
-      // interactivitySettings contains the following properties:
-      // 1. targetNamespace: This is a simple string that should follow the `block-namepsace/block-name` structure
-      // 2. subsumption: This is a simple boolean that when enabled will allow us to convert the markup of our block from "target namespace" usage to "subsumption" usage.
 			settings.attributes = {
 				...settings.attributes,
 				interactivitySettings: {
 					type: 'object',
-          default: {
-            targetNamespace: '',
-            subsumption: false,
-          },
+					default: {
+						targetNamespace: '',
+						subsumption: false,
+					},
 				},
 			};
 			settings.usesContext = [
@@ -89,7 +83,6 @@ addFilter(
 				'interactivitySettings',
 			];
 		}
-
 		return settings;
 	},
 	100
